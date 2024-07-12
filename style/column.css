@@ -8,18 +8,40 @@ body{
         font-family: "Bona Nova SC", serif;
         font-weight: 400;
         font-style: normal;
-        padding: 20px 0;
+        padding: 20px 0;     
     }
 }
+
+/* option one */
 
 .display_option_icon{
     border: 1px solid black;
     font-weight: bold;
     border-radius: 5px;
     margin-bottom: 20px;
+    span{
+        border: 2px solid black;
+    }
 }
 .display_option_icon:hover{
     background:lightgray;
+}
+
+/* option two */
+
+#display_option_two{
+    margin-bottom: 20px;
+    #display_grid, #display_row {
+        font-size: 35px;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    #display_grid:hover, #display_row:hover{
+        background:lightgray;
+        cursor: pointer;
+    }
+
 }
 
 #column_one, #column_two{
