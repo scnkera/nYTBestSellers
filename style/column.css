@@ -1,0 +1,36 @@
+body{
+    /* color: red; */
+    margin: 0 50px;
+}
+
+#title{
+    #title_main {
+        font-family: "Bona Nova SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 20px 0;
+    }
+}
+
+.display_option_icon{
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.display_option_icon:hover{
+    background:lightgray;
+}
+
+#column_one, #column_two{
+    .col{
+        border: 2px solid black;
+        /* border-radius: 5px; */
+        height: 250px;
+    }
+    .col:hover{
+        background:lightgray;
+    }
+
+
+}
