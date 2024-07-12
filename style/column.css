@@ -8,6 +8,7 @@ body{
         font-family: "Bona Nova SC", serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 50px;
         padding: 20px 0;     
     }
 }
@@ -44,15 +45,25 @@ body{
 
 }
 
-#column_one, #column_two{
-    .col{
+#book_row_one, #book_row_two{
+    .book-col{
         border: 2px solid black;
         /* border-radius: 5px; */
-        height: 250px;
+        .rank-num{
+            border: 1px solid black;
+        }
+        .book-img{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 75px;
+            width: 75px;
+        }
     }
-    .col:hover{
+    .book-col:hover{
         background:lightgray;
     }
+
 
 
 }
