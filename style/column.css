@@ -77,6 +77,11 @@ body{
         background:lightgray;
     }
 
+}
 
-
+#book_list_title{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
 }
