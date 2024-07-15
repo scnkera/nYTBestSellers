@@ -51,7 +51,7 @@ body{
 #book_row_one, #book_row_two{
     .book-col{
         border: 2px solid black;
-        /* border-radius: 5px; */
+        border-radius: 5px;
         .rank-num{
             border: 1px solid black;
             border-radius: 50%;
