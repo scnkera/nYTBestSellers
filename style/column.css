@@ -1,10 +1,11 @@
 body{
-    background: lightgoldenrodyellow;
-    margin: 0 200px;
+    /* background: lightgoldenrodyellow; */
+    background-image: url("../static/blueTheme.jpg");
+    /* margin: 0 200px; */
 }
-#display_grid, #display_row, #book_row_one, #book_row_two{
+/* #display_grid, #display_row, #book_row_one, #book_row_two{
     background: white;
-}
+} */
 
 #title{
     #title_main {
@@ -12,37 +13,40 @@ body{
         font-weight: 400;
         font-style: normal;
         font-size: 50px;
-        padding: 20px 0;     
+        padding: 20px 0;
+        color: white;     
+        text-shadow: 1px 1px 10px black;
     }
 }
 
 /* option one */
 
 .display_option_icon{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-weight: bold;
     border-radius: 5px;
     margin-bottom: 20px;
     span{
-        border: 2px solid black;
+        border: 1px solid black;
     }
 }
-.display_option_icon:hover{
+/* .display_option_icon:hover{
     background:lightgray;
-}
+} */
 
 /* option two */
 
 #display_option_two{
     margin-bottom: 20px;
+    color: white;  
     #display_grid, #display_row {
         font-size: 35px;
-        border: 2px solid black;
+        border: 1px solid white;
         border-radius: 5px;
         padding: 5px;
     }
     #display_grid:hover, #display_row:hover{
-        background:lightgray;
+        background: darkgrey;
         cursor: pointer;
     }
 
@@ -50,7 +54,7 @@ body{
 
 #book_row_one, #book_row_two{
     .book-col{
-        border: 2px solid black;
+        /* border: 2px solid black; */
         border-radius: 5px;
         padding: 0;
         .rank-num{
@@ -70,11 +74,12 @@ body{
             height: 100%;
             width: 100%;
             margin-top: 20px;
+            border: 1px solid black;
         }
     }
-    .book-col:hover{
+    /* .book-col:hover{
         background:lightgray;
-    }
+    } */
 
 }
 
