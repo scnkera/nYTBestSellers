@@ -1,6 +1,6 @@
 body{
     background: lightgoldenrodyellow;
-    margin: 0 50px;
+    margin: 0 200px;
 }
 #display_grid, #display_row, #book_row_one, #book_row_two{
     background: white;
@@ -52,14 +52,13 @@ body{
     .book-col{
         border: 2px solid black;
         border-radius: 5px;
+        padding: 0;
         .rank-num{
             border: 1px solid black;
             border-radius: 50%;
-            padding: 3px;
-            width: 10%;
-            height: 10%;
+            padding: 5px;
             background: lightgoldenrodyellow;
-            margin: 5px 0;
+            margin: 10px 0 0;
             font-weight: bold;
             font-family: "Bona Nova SC", serif;
             font-style: normal;
@@ -68,9 +67,9 @@ body{
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: 100px;
-            width: 75px;
-            margin: 20px 0;
+            height: 100%;
+            width: 100%;
+            margin-top: 20px;
         }
     }
     .book-col:hover{
