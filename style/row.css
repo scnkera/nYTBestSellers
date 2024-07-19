@@ -55,7 +55,33 @@ body{
     }
 }
 
-/* my own */
+
+.book_row{
+    background: #f7f3f2;
+    margin-left: 6px;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+    .rank-num{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "Bona Nova SC", serif;
+        font-style: normal;
+        color: rgb(79, 78, 78);
+    }
+    .book-img{
+        margin: 20px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 150px;;
+        width: 100px;
+        box-shadow: 1px 1px 10px darkgray;
+    }
+    .book_title{
+        font-weight: bold;
+    }
+    
+}
 
 #book_row_one, #book_row_two{
     background: #f7f3f2;
@@ -71,6 +97,14 @@ body{
             font-family: "Bona Nova SC", serif;
             font-style: normal;
             color: rgb(79, 78, 78);
+        }
+        .book-img{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 200px;;
+            width: 100px;
+            box-shadow: 1px 1px 10px darkgray;
         }
 
         /* .rank-num{
@@ -89,9 +123,7 @@ body{
             background-size: cover;
             height: 100%;
             width: 100%;
-            /* margin-top: 20px; */
             box-shadow: 1px 1px 10px darkgray;
-            /* border: 1px solid black; */
         }
     }
     /* .book-col:hover{
