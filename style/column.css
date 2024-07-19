@@ -1,49 +1,43 @@
 body{
-    /* background: lightgoldenrodyellow; */
-    background-image: url("../static/blueTheme.jpg");
-    /* margin: 0 200px; */
+    background: #fbf7f5;
+    /* background-image: url("../static/blueTheme.jpg"); */
 }
-/* #display_grid, #display_row, #book_row_one, #book_row_two{
-    background: white;
-} */
+
+
+#color_banner{
+    background:aqua;
+    height: 15px;
+}
 
 #title{
     #title_main {
         font-family: "Bona Nova SC", serif;
-        font-weight: 400;
+        font-weight: 600;
         font-style: normal;
         font-size: 50px;
-        padding: 20px 0;
-        color: white;     
-        text-shadow: 1px 1px 10px black;
+        margin-top: 20px;   
+        text-shadow: 2px 2px 2px darkgray;
     }
 }
 
-/* option one */
-
-.display_option_icon{
-    /* border: 1px solid black; */
-    font-weight: bold;
-    border-radius: 5px;
+#display_option_icon{
     margin-bottom: 20px;
-    span{
-        border: 1px solid black;
+    .col-1, .col{
+        padding: 0;
     }
-}
-/* .display_option_icon:hover{
-    background:lightgray;
-} */
-
-/* option two */
-
-#display_option_two{
-    margin-bottom: 20px;
-    color: white;  
     #display_grid, #display_row {
-        font-size: 35px;
-        border: 1px solid white;
-        border-radius: 5px;
-        padding: 5px;
+        font-size: 25px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    #display_grid {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    #display_row {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background:aqua;
     }
     #display_grid:hover, #display_row:hover{
         background: darkgrey;
@@ -52,12 +46,32 @@ body{
 
 }
 
+#genre{
+    background: #f7f3f2;
+    #genre_label{
+        background:#00ffff;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+}
+
 #book_row_one, #book_row_two{
+    background: #f7f3f2;
+    padding-bottom: 50px;
     .book-col{
         /* border: 2px solid black; */
         border-radius: 5px;
         padding: 0;
+        margin: 0 10px;
         .rank-num{
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "Bona Nova SC", serif;
+            font-style: normal;
+            color: rgb(79, 78, 78);
+        }
+
+        /* .rank-num{
             border: 1px solid black;
             border-radius: 50%;
             padding: 5px;
@@ -66,15 +80,16 @@ body{
             font-weight: bold;
             font-family: "Bona Nova SC", serif;
             font-style: normal;
-        }
+        } */
         .book-img{
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             height: 100%;
             width: 100%;
-            margin-top: 20px;
-            border: 1px solid black;
+            /* margin-top: 20px; */
+            box-shadow: 1px 1px 10px darkgray;
+            /* border: 1px solid black; */
         }
     }
     /* .book-col:hover{
