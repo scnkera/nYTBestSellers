@@ -27,23 +27,25 @@ body{
     }
     #display_grid, #display_row {
         font-size: 25px;
-        border: 1px solid black;
+        border: 2px solid rgb(79, 78, 78);
         padding: 10px;
         color: black;
     }
     #display_grid {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        
+        border-right: none;
+        background:aqua;
     }
     #display_row {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        background:aqua;
     }
     #display_grid:hover, #display_row:hover{
-        background: darkgrey;
         cursor: pointer;
+    }
+    #display_row:hover{
+        background: darkgrey;
     }
 
 }
@@ -90,7 +92,7 @@ body{
             background-position: center;
             background-size: cover;
             height: 100%;
-            width: 100%;
+            width: 50%;
             /* margin-top: 20px; */
             box-shadow: 1px 1px 10px darkgray;
             /* border: 1px solid black; */
@@ -104,7 +106,7 @@ body{
 
 #book_list_title{
     font-family: "Bona Nova SC", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     margin-top: 50px;
 }

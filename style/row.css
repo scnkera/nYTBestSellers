@@ -27,13 +27,14 @@ body{
     }
     #display_grid, #display_row {
         font-size: 25px;
-        border: 1px solid black;
+        border: 2px solid rgb(79, 78, 78);
         padding: 10px;
         color: black;
     }
     #display_grid {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+        border-right: none;
     }
     #display_row {
         border-top-right-radius: 15px;
@@ -41,8 +42,10 @@ body{
         background:aqua;
     }
     #display_grid:hover, #display_row:hover{
-        background: darkgrey;
         cursor: pointer;
+    }
+    #display_grid:hover{
+        background: darkgrey;
     }
 
 }
