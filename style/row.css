@@ -109,19 +109,7 @@ body{
             height: 200px;;
             width: 100px;
             box-shadow: 1px 1px 10px darkgray;
-        }
-
-        /* .rank-num{
-            border: 1px solid black;
-            border-radius: 50%;
-            padding: 5px;
-            background: lightgoldenrodyellow;
-            margin: 10px 0 0;
-            font-weight: bold;
-            font-family: "Bona Nova SC", serif;
-            font-style: normal;
-        } */
-        .book-img{
+        }        .book-img{
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -130,10 +118,6 @@ body{
             box-shadow: 1px 1px 10px darkgray;
         }
     }
-    /* .book-col:hover{
-        background:lightgray;
-    } */
-
 }
 
 #book_list_title{

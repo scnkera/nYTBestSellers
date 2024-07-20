@@ -15,7 +15,7 @@ body{
         font-weight: 600;
         font-style: normal;
         font-size: 50px;
-        margin-top: 20px;   
+        margin: 50px 0;   
         text-shadow: 2px 2px 2px darkgray;
     }
 }
@@ -63,7 +63,7 @@ body{
 
 #book_row_one, #book_row_two{
     background: #f7f3f2;
-    padding-bottom: 50px;
+    /* padding-bottom: 25px; */
     .book-col{
         /* border: 2px solid black; */
         border-radius: 5px;
@@ -76,17 +76,6 @@ body{
             font-style: normal;
             color: rgb(79, 78, 78);
         }
-
-        /* .rank-num{
-            border: 1px solid black;
-            border-radius: 50%;
-            padding: 5px;
-            background: lightgoldenrodyellow;
-            margin: 10px 0 0;
-            font-weight: bold;
-            font-family: "Bona Nova SC", serif;
-            font-style: normal;
-        } */
         .book-img{
             background-repeat: no-repeat;
             background-position: center;
@@ -98,9 +87,6 @@ body{
             /* border: 1px solid black; */
         }
     }
-    /* .book-col:hover{
-        background:lightgray;
-    } */
 
 }
 
