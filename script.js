@@ -5,25 +5,54 @@ const responsePromise = fetch(
     method: 'GET'
 });
 
-responsePromise.then(response => {
+books.then((response) => {
     console.log(response);
-    const responseBodyPromise = response.text();
-    responseBodyPromise.then(body => {
-        console.log(body);
-        // 1. Parse the body into a javacript array
-        const array = JSON.parse(body);
-        console.log(array)
-        // 2. Rank books
-        // 3. Log it books by rank
-        console.log(book_ranks)
-        book_titles_list = document.getElementById("book_titles").innerHTML;
+    let promise2 = response.json();
 
-    })
+    promise2.then((data) => {
+        console.log(data);
+        lists(data);
+    });
 });
-let bootklistdiv = document.getElementById("book_list_names");
 
-const makeAPICalls = asynce () => {
-    const response await fetch (
+const lists = (data) => {
+    let output = ``;
+    const lists = data.results.lists;
+    for (const list of lists) {
+        const listName = list.list_name;
+        output += "<h2>" + listName + "</h2>";
+        const books = list.books;
+
+        for (const book of books) {
+            const title = book.title;
+            const author = book.author;
+            output += "<h4>" + title + "by" + author + "</h4>";
+        }
+    }
+    document.getElementById("book_list_names").innerHTML = output;
+};
+
+
+
+// responsePromise.then(response => {
+//     console.log(response);
+//     const responseBodyPromise = response.text();
+//     responseBodyPromise.then(body => {
+//         console.log(body);
+//         // 1. Parse the body into a javacript array
+//         const array = JSON.parse(body);
+//         console.log(array)
+//         // 2. Rank books
+//         // 3. Log it books by rank
+//         console.log(book_ranks)
+//         book_titles_list = document.getElementById("book_titles").innerHTML;
+
+//     })
+// });
+// let bootklistdiv = document.getElementById("book_list_names");
+
+// const makeAPICalls = asynce () => {
+//     const response await fetch (
         
-    )
-}
+//     )
+// }
