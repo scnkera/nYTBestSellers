@@ -32,27 +32,25 @@ const lists = (data) => {
     document.getElementById("book_list_names").innerHTML = output;
 };
 
+responsePromise.then(response => {
+    console.log(response);
+    const responseBodyPromise = response.text();
+    responseBodyPromise.then(body => {
+        console.log(body);
+        // 1. Parse the body into a javacript array
+        const array = JSON.parse(body);
+        console.log(array)
+        // 2. Rank books
+        // 3. Log it books by rank
+        console.log(book_ranks)
+        book_titles_list = document.getElementById("book_titles").innerHTML;
 
+    })
+});
+let bootklistdiv = document.getElementById("book_list_names");
 
-// responsePromise.then(response => {
-//     console.log(response);
-//     const responseBodyPromise = response.text();
-//     responseBodyPromise.then(body => {
-//         console.log(body);
-//         // 1. Parse the body into a javacript array
-//         const array = JSON.parse(body);
-//         console.log(array)
-//         // 2. Rank books
-//         // 3. Log it books by rank
-//         console.log(book_ranks)
-//         book_titles_list = document.getElementById("book_titles").innerHTML;
-
-//     })
-// });
-// let bootklistdiv = document.getElementById("book_list_names");
-
-// const makeAPICalls = asynce () => {
-//     const response await fetch (
+const makeAPICalls = asynce () => {
+    const response await fetch (
         
-//     )
-// }
+    )
+}
